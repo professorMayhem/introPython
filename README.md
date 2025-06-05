@@ -9,3 +9,7 @@ userrepeat.py is an example of a loop that asks the user if they want to continu
 
 intinput.py has an example of exception handling for integer input
 
+filewrite.py is a simple example of writing to a file.
+
+names.txt and words_alpha.txt are sample text files for file input programs
+
