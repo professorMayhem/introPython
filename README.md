@@ -13,3 +13,5 @@ filewrite.py is a simple example of writing to a file.
 
 names.txt and words_alpha.txt are sample text files for file input programs
 
+longestsequence.py finds the longest sequence of a given value in a list
+
