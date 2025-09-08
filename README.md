@@ -15,3 +15,7 @@ names.txt and words_alpha.txt are sample text files for file input programs
 
 longestsequence.py finds the longest sequence of a given value in a list
 
+formatted.py uses the split() method, a little formatted printing
+
+nestedfor.py has an example of nested for loops
+
