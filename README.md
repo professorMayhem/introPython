@@ -19,3 +19,5 @@ formatted.py uses the split() method, a little formatted printing
 
 nestedfor.py has an example of nested for loops
 
+scope.py shows some examples of global and local scope
+
