@@ -19,33 +19,53 @@ def myFunFunction():
     print("From myFunFunction: " + global_var)
 
 
-def anotherFunction(X):
+def anotherFunction(X, Y):
     # X is only visible in this function
-    print("X = " + str(X))
+    print("X = " + str(X) + " and Y = " + str(Y))
 
-def loopFun(N):
+    #change X and Y
+    X = 0
+    Y = 2
+    print("X = " + str(X) + " and Y = " + str(Y))
+
+    
+def loopFun(theList, N):
     for i in range(N):
-        funvar = 0  # visible in loopFun
-        print(i)
+        theList[i] += 1
 
     # in Python, i and loopvar are visible outside the block
     # not true with all languages
-    print(i)
-    print(funvar)
+    print("i = " + str(i))
     
 def main():
+    
     a = 42
     b = 43
+    mainList = [2, 4, 6, 8, 3, 5, 7]
 
     # print the variables that are local to main
     # instances of a and b are different than those defined in myFunFunction
+    print("Printing a and b from main:")
     print(a)
     print(b)
+    print()
+
 
     # function calls in main
+    print("Calling myFunFunction from main")
     myFunFunction()
-    anotherFunction(a)
-    loopFun(5)
+    print("Calling anotherFunction from main")
+    anotherFunction(a, b)
+    print()
+
+    # lists are pass by reference
+    # print the list, then call the function that changes the list,
+    # then print again
+    print("Doing the list stuff")
+    print(mainList)
+    loopFun(mainList,5)
+    print("after the function call")
+    print(mainList)
 
 
 if __name__ == '__main__':
