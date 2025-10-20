@@ -9,7 +9,6 @@
 def checkInput():
     while True:
         try:    #put the code that might break in the try clause
-            user_input = int(input("Enter an integer: "))
             num = int(user_input) #throws ValueError if user does not enter int
             
             print("Input is valid:  ", num)
@@ -23,5 +22,6 @@ def checkInput():
 
 # function call
 checkedNum = checkInput()
+
 
 
